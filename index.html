@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison Fleur</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fontes sofisticadas -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <h1>Maison Fleur</h1>
+  <nav>
+    <a href="#">Início</a>
+    <a href="#produtos">Coleção</a>
+    <a id="cart-btn">Carrinho (<span id="cart-count">0</span>)</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-box">
+    <h2>Elegância em forma de flores</h2>
+    <p>Arranjos exclusivos para momentos que merecem mais do que o comum.</p>
+    <a href="#produtos" class="btn">Explorar coleção</a>
+  </div>
+</section>
+
+<section id="produtos" class="products">
+  <h2>Coleção Exclusiva</h2>
+
+  <div class="grid">
+
+    <!-- PRODUTO -->
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946">
+      <h3>Bouquet Aurora</h3>
+      <span>R$ 129,90</span>
+      <button onclick="addToCart('Bouquet Aurora',129.9)">Adicionar</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+      <h3>Orquídea Imperial</h3>
+      <span>R$ 159,90</span>
+      <button onclick="addToCart('Orquídea Imperial',159.9)">Adicionar</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551">
+      <h3>Lírios Noblesse</h3>
+      <span>R$ 139,90</span>
+      <button onclick="addToCart('Lírios Noblesse',139.9)">Adicionar</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df">
+      <h3>Rosas Blanc</h3>
+      <span>R$ 119,90</span>
+      <button onclick="addToCart('Rosas Blanc',119.9)">Adicionar</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d">
+      <h3>Jardim Paris</h3>
+      <span>R$ 189,90</span>
+      <button onclick="addToCart('Jardim Paris',189.9)">Adicionar</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+      <h3>Essência Rosé</h3>
+      <span>R$ 149,90</span>
+      <button onclick="addToCart('Essência Rosé',149.9)">Adicionar</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- CARRINHO -->
+<div id="cart" class="cart">
+  <h2>Seu carrinho</h2>
+  <ul id="cart-items"></ul>
+  <p id="total">Total: R$ 0</p>
+  <button id="checkout">Finalizar pedido</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
